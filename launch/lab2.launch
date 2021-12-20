@@ -1,0 +1,12 @@
+<launch>
+<!-- 
+<arg name="map_1" default="$(find lab2)/world/stage.yaml"/>
+
+<node pkg="map_server" name="map_server1" type="map_server" args="$(arg map_1)">
+    <param name= "first_map" value ="map_1"/>
+ </node> -->
+<node name="stage" pkg="stage_ros" type="stageros"
+	    args="$(find lab2)/world/playground.world" />
+
+
+</launch>
